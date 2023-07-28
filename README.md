@@ -23,3 +23,55 @@ Developing smart glasses with EEG detection capabilities is an ideal approach du
 A 3D modeling software named Blender was utilized to design the glasses, considering ergonomic factors and feedback from potential users. Multiple iterations of the 3D model were developed and tested to ensure optimal fit and comfort for various head shapes and sizes. An aesthetic look was considered, while still in incorporating places for wires, circuit boards and holes for electrodes to read the EEG of the user.
 
 ### The Code
+
+#### File 1 (eegcode.py):
+
+1. Import Libraries:
+- matplotlib: A plotting library for Python.
+- pathlib: A library for handling file paths.
+- mne: A library for processing EEG and MEG data.
+- numpy: A library for numerical operations.
+- matplotlib.pyplot: A module for creating plots with Matplotlib.
+2. Class Definition DataProcessor:
+- This class is defined to process EEG data and perform various operations on it.
+- The class has several methods for loading raw EEG data, plotting the raw data, finding events, defining event IDs, counting button events, and more.
+3. Class GuidelineChecker:
+- This class is defined to check EEG frequency bands (delta, theta, alpha, beta) against certain criteria and assign a status to each band based on the evaluation.
+4. data_processor Object Creation and Data Processing:
+- An instance of the DataProcessor class is created, and various methods are called to process the EEG data step by step.
+- EEG data is loaded, plotted, events are found, event IDs are defined, and the raw data is plotted with events.
+
+5. EEG Data Preprocessing:
+- The raw EEG data is preprocessed by copying the relevant channels (MEG, EEG, EOG) and excluding any bad channels.
+6. EEG Data Filtering:
+- The preprocessed EEG data is filtered to keep frequencies between 0.1 Hz and 40 Hz.
+7. Plotting Power Spectral Density (PSD):
+- The PSD is computed and plotted for the filtered EEG data before and after filtering.
+8. Saving Filtered Data:
+- The filtered EEG data is saved to a file named 'eeg_cropped_filt_raw.fif'.
+9. EEG Data Analysis:
+- Some EEG data analysis is performed using Welch's method to compute the power in different frequency bands (delta, theta, alpha, beta).
+10. Class GuidelineChecker Usage:
+- The GuidelineChecker class is used to evaluate the EEG data against specific frequency band criteria and assign a status (pass, half pass, fail) to each band.
+11. Result Text Assignment:
+- A text result is determined based on the number of passed, half-passed, and failed criteria, and it is assigned to the result variable.
+
+#### File 2 (main.py):
+
+1. Import Libraries:
+- board: A library to access board pins on a microcontroller.
+- busio: A library for handling communication buses like I2C.
+- adafruit_ssd1306: A library for driving SSD1306-based OLED displays.
+- adafruit_display_text: A library for displaying text on Adafruit displays.
+- adafruit_bitmap_font: A library for loading bitmap fonts.
+2. OLED Display Setup:
+- The code sets up an OLED display with a width of 96 pixels and a height of 16 pixels using the SSD1306_I2C class.
+3. main() Function:
+- The main() function initializes the display, loads a font, creates a display group, adds a text label to the group, and shows the group on the OLED display.
+- It prints the result, reads analog input from pin A0, and waits for 0.1 seconds.
+4. Infinite Loop:
+- The main() function is called in an infinite loop to continuously update and display the text result and read the analog input.
+
+Overall, the code processes EEG data, filters it, analyzes it to compute power in different frequency bands, and provides a result based on the evaluation of the frequency bands. The result is then displayed on an OLED screen along with analog input readings from the microcontroller.
+
+###### For any inquiries, feel free to contact me at lakyvasu2008@gmail.com!
