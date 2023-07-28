@@ -26,6 +26,10 @@ A 3D modeling software named Blender was utilized to design the glasses, conside
 
 <img width="550" alt="Screen Shot 2023-07-16 at 8 43 26 PM" src="https://github.com/LakshyaV/EEG_SmartGlasses/assets/92231817/04591ff3-dbac-4dea-ae14-908864c60ed2">
 
+## In Progress Construction
+
+<img width="555" alt="Screen Shot 2023-07-18 at 4 01 32 PM" src="https://github.com/LakshyaV/EEG_SmartGlasses/assets/92231817/4204c1fd-9047-4fc7-8336-eb661967a3d0">
+
 ### The Code
 
 #### MNE Python
