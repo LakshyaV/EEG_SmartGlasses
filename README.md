@@ -4,8 +4,10 @@ Welcome to the repository for the Smart Glasses with EEG Reading and Health Feed
 
 ### Table of Contents
 1. The Research
-3. Design and Modelling
-5. The Code
+2. Design and Modelling
+3. The Code
+
+<img width="380" alt="Screen Shot 2023-07-18 at 4 01 50 PM" src="https://github.com/LakshyaV/EEG_SmartGlasses/assets/92231817/4b00ac34-c96b-4b09-afd4-ab276ec96e64">
 
 ### The Research
 The foundation of this project is based on extensive research in the fields of neurology, EEG technology, and wearable devices. A in-depth literature review was conducted to understand the principles of EEG signals and how they correlate with neural health. This research helped identify the most relevant EEG biomarkers and their significance in diagnosing various neurological conditions. The study of existing EEG devices and wearable technologies provided insights into the limitations of current solutions. I recognized the need for a non-invasive, comfortable, and user-friendly EEG monitoring system that could seamlessly integrate into daily life without compromising data accuracy.
@@ -21,6 +23,8 @@ Developing smart glasses with EEG detection capabilities is an ideal approach du
 
 ### Design and Modelling
 A 3D modeling software named Blender was utilized to design the glasses, considering ergonomic factors and feedback from potential users. Multiple iterations of the 3D model were developed and tested to ensure optimal fit and comfort for various head shapes and sizes. An aesthetic look was considered, while still in incorporating places for wires, circuit boards and holes for electrodes to read the EEG of the user.
+
+<img width="550" alt="Screen Shot 2023-07-16 at 8 43 26 PM" src="https://github.com/LakshyaV/EEG_SmartGlasses/assets/92231817/04591ff3-dbac-4dea-ae14-908864c60ed2">
 
 ### The Code
 
