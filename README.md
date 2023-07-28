@@ -4,9 +4,7 @@ Welcome to the repository for the Smart Glasses with EEG Reading and Health Feed
 
 ### Table of Contents
 1. The Research
-2. Materials
 3. Design and Modelling
-4. Construction
 5. The Code
 
 ### The Research
@@ -21,5 +19,7 @@ The best electrodes for EEG (Electroencephalography) are typically silver/silver
 #### Best Solution
 Developing smart glasses with EEG detection capabilities is an ideal approach due to the high prevalence of neural disease patients among seniors, constituting 80% of the affected population. Leveraging the fact that an impressive 92% of seniors already wear glasses, incorporating EEG technology into these smart eyewear devices offers a non-intrusive and convenient means of monitoring brain activity, facilitating early detection and personalized management of neurological conditions in this vulnerable demographic.
 
-#### Coding Research
-#####
+### Design and Modelling
+A 3D modeling software named Blender was utilized to design the glasses, considering ergonomic factors and feedback from potential users. Multiple iterations of the 3D model were developed and tested to ensure optimal fit and comfort for various head shapes and sizes. An aesthetic look was considered, while still in incorporating places for wires, circuit boards and holes for electrodes to read the EEG of the user.
+
+### The Code
